@@ -6,7 +6,7 @@ alias unmute='for x in `amixer controls  | grep layback` ; do amixer cset "${x}"
 #touchpad
 alias touchoff="sudo modprobe -rv psmouse"
 alias ontouch="sudo modprobe -v psmouse"
-
+alias distouch='xinput list && xinput set-prop xx "Device Enabled" 0'
 
 #mount
 alias um="unmount /media/KINGSTON"
@@ -18,6 +18,7 @@ alias sudo="sudo -E"
 alias mmm="mvn -Dmaven.test.skip=true" 
 
 #apt
+alias aptitude="apt-get"
 alias apti="sudo aptitude install"
 alias apts="sudo aptitude search"
 alias aptr="sudo aptitude remove"

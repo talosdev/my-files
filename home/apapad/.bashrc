@@ -113,21 +113,14 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PS1="\[\033[35;1m\]\u\[\033[m\]@\[\033[36;1m\]\h:\n\[\033[33;1m\]\w\$\[\033[m\] "
 
+PS1='\[\e[0;32m\]\u\[\e[m\]: \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
 
 export DEBUG_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044"
 
 export JAVA_OPTS="$JAVA_OPTS -DLOG_QUERY=true"
 
-# History stuff (multiterminal support)
-#export HISTCONTROL=ignoredups:erasedups  # no duplicate entries
-#export HISTSIZE=100000                   # big big history
-#export HISTFILESIZE=100000               # big big history
-#shopt -s histappend                      # append to history, don't overwrite it
 
-# Save and reload the history after each command finishes
-#export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 
 export TMDB_API_KEY=3f8efa8e7eb1de604fee9537c4d712a8
 
