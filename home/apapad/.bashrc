@@ -115,20 +115,6 @@ fi
 
 export PS1="\[\033[35;1m\]\u\[\033[m\]@\[\033[36;1m\]\h:\n\[\033[33;1m\]\w\$\[\033[m\] "
 
-export PATH="$PATH:/home/apapad/scripts:/usr/java/jdk1.7.0_21/bin/"
-
-export ORACLE_BASE=/oracle/app
-
-export JAVA_HOME=/usr/lib/jvm/java-7-oracle
-export MW_HOME=/home/apapad/progs/weblogic
-export ANT_HOME=/home/apapad/progs/apache-ant-1.7.1
-
-export WL_HOME=/home/apapad/progs/weblogic/wlserver
-export WLS_HOME=/home/apapad/progs/weblogic/wlserver/server
-
-export ASPECTJ_HOME=/home/apapad/progs/aspectj1.8
-
-export CLASSPATH=$CLASSPATH
 
 export DEBUG_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044"
 
