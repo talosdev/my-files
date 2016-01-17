@@ -1,0 +1,7 @@
+[user]
+	email = aristides.papadopoulos@gmail.com
+	name = apapad
+[core]
+	editor = vim
+[push]
+	default = matching
