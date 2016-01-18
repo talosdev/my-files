@@ -18,7 +18,6 @@ alias sudo="sudo -E"
 alias mmm="mvn -Dmaven.test.skip=true" 
 
 #apt
-alias aptitude="apt-get"
 alias apti="sudo aptitude install"
 alias apts="sudo aptitude search"
 alias aptr="sudo aptitude remove"
