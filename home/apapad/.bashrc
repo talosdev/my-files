@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 
-PS1='\[\e[0;32m\]\u\[\e[m\]: \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
+PS1="\[\e[0;32m\]\u\[\e[m\]: \[\e[1;34m\]\w\[\e[m\] \n\[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]"
 
 export DEBUG_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044"
 
@@ -126,4 +126,5 @@ export TMDB_API_KEY=3f8efa8e7eb1de604fee9537c4d712a8
 
 function trim {
 	echo $1 | sed 's/^[ \t]*//; s/[ \t]*$//' 
+
 }
