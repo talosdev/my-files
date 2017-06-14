@@ -62,12 +62,15 @@ alias gd="git diff"
 alias gcb="git checkout -b" # create branch and switch to it
 alias gau="git update-index --assume-unchanged" # ignore a file that is already tracked
 
+
+
 alias gsw="git update-index --skip-worktree" # ignore a file that is already tracked BETTER THAN THE PREVIOUS
 alias glsw="git ls-files -v . | grep ^S" # list files marked with skip worktree
 alias gnsw="git update-index --no-skip-worktree" # list files marked with skip worktree
 
 alias gcd="git checkout develop"
 alias gc="git checkout"
+alias gsu="git submodule update"
 
 alias gl="git log --name-status --decorate"
 
