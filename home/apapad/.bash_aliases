@@ -59,10 +59,9 @@ alias gfod="git fetch origin develop"
 alias gm="git merge --no-commit FETCH_HEAD"
 alias gs="git status"
 alias gd="git diff"
+alias gdd="git diff --cached"
 alias gcb="git checkout -b" # create branch and switch to it
 alias gau="git update-index --assume-unchanged" # ignore a file that is already tracked
-
-
 
 alias gsw="git update-index --skip-worktree" # ignore a file that is already tracked BETTER THAN THE PREVIOUS
 alias glsw="git ls-files -v . | grep ^S" # list files marked with skip worktree
@@ -70,12 +69,13 @@ alias gnsw="git update-index --no-skip-worktree" # list files marked with skip w
 
 alias gcd="git checkout develop"
 alias gc="git checkout"
-alias gsu="git submodule update"
-
+alias gccc="git checkout -- ."
+alias gsp="git stash pop"
 alias gl="git log --name-status --decorate"
 
 alias gll="git log --graph --oneline --decorate"
-
+alias grc="git rebase --continue"
+alias gmt="git mergetool"
 
 
 alias vi="vim"
@@ -85,4 +85,5 @@ alias wm="wmsystemtray --non-wmaker --bgcolor white"
 
 alias kd="kdiff3"
 
+alias syncadb="adb shell date -s `date +%G%m%d.%H%M%S`"
 

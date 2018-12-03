@@ -56,6 +56,10 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
 if [ "$color_prompt" = yes ]; then
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 else
@@ -114,7 +118,7 @@ if ! shopt -oq posix; then
 fi
 
 
-PS1="\[\e[0;32m\]\u\[\e[m\]: \[\e[1;34m\]\w\[\e[m\] \n\[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]"
+PS1="\[\e[0;32m\]\u\[\e[m\]: \[\e[1;34m\]\w\[\e[m\]\[\e[1;33m\]\$(parse_git_branch)\[\e[m\] \n\[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]"
 
 export DEBUG_OPTS="-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=1044"
 
@@ -128,3 +132,8 @@ function trim {
 	echo $1 | sed 's/^[ \t]*//; s/[ \t]*$//' 
 
 }
+
+
+export PATH=$PATH:/home/apapad/progs/Android/Sdk/ndk-bundle
+export ANDROID_HOME=/home/apapad/progs/Android/Sdk
+
