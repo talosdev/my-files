@@ -77,6 +77,7 @@ alias gll="git log --graph --oneline --decorate"
 alias grc="git rebase --continue"
 alias gmt="git mergetool"
 
+alias gsu="git submodule update"
 
 alias vi="vim"
 
@@ -87,3 +88,16 @@ alias kd="kdiff3"
 
 alias syncadb="adb shell date -s `date +%G%m%d.%H%M%S`"
 
+#google drive
+alias gmount="google-drive-ocamlfuse /work/drive"
+alias gumount="fusermount -u /work/drive"
+alias gunmount=gumount
+
+
+#Husband redis
+alias cdr="cd /work/projects/scruff/Husband-Redis/config/Docker/development/"
+alias hru="docker-compose up -d"
+alias hrl="docker-compose logs --tail 100 -f app"
+alias hrd="docker-compose down -v"
+alias hrb="docker-compose build app"
+alias hrc="docker exec -it app_development bash"

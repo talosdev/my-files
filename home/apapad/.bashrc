@@ -134,6 +134,7 @@ function trim {
 }
 
 
-export PATH=$PATH:/home/apapad/progs/Android/Sdk/ndk-bundle
-export ANDROID_HOME=/home/apapad/progs/Android/Sdk
+export PATH=$PATH:/work/android/platform-tools
+export ANDROID_HOME=/work/android
+export FIRSTRUN_EMAIL=aris@scruff.com
 
